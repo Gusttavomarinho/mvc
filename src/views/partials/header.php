@@ -1,1 +1,2 @@
-<h1>Header</h1>
+<h1><?= $tpagina ?></h1>
+<hr/>

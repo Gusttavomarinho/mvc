@@ -6,7 +6,19 @@ use \core\Controller;
 class HomeController extends Controller {
 
     public function index() {
-        $this->render('home', ['nome' => 'Bonieky']);
+        $this->render('home', ['nome' => 'Gustavo']);
+    }
+
+    public function gustavo(){
+        $nome = 'Gustavo Marinho';
+        $tpagina = 'Pagina sobre -> '.$nome;
+
+        $data = [
+            'nome' => $nome,
+            'tpagina' => $tpagina
+        ];
+        
+        $this->render('gustavo',$data);
     }
 
     public function sobre() {
