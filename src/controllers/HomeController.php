@@ -2,6 +2,7 @@
 namespace src\controllers;
 
 use \core\Controller;
+use \src\models\Test;
 
 class HomeController extends Controller {
 
@@ -27,6 +28,20 @@ class HomeController extends Controller {
 
     public function sobreP($args) {
         print_r($args);
+    }
+
+    public function fotos(){
+        $test = new Test();
+        echo " Fotos ?";
+    }
+
+    public function foto($parametros){
+        if($parametros){
+            echo "Unica foto...ID: ".$parametros['id'];
+        }else{
+            $this->redirect('/fotos');
+        }
+        
     }
 
 }
