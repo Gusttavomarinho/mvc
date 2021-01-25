@@ -2,4 +2,3 @@
 
 Opa, <?=$nome;?>
 <hr/>
-<?= isset($tpagina) ? $tpagina : 'Titulo da pagina ###'; ?>

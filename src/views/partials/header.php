@@ -1,2 +1,2 @@
-<h1><?= $tpagina ?></h1>
+<h1><?= isset($tpagina) ? $tpagina : 'Titulo da pagina ###'; ?></h1>
 <hr/>
