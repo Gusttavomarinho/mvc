@@ -7,7 +7,14 @@ use \src\models\Test;
 class HomeController extends Controller {
 
     public function index() {
-        $this->render('home', ['nome' => 'Gustavo']);
+        $posts = [
+            ['titulo' => 'Titulo de teste 01', 'corpo' => 'Mensagem de teste 01'],
+            ['titulo' => 'Titulo de teste 02', 'corpo' => 'Mensagem de teste 02'],
+
+        ];
+        $nome = 'Gustavo';
+
+        $this->render('home', ['nome' => $nome, 'posts' => $posts]);
     }
 
     public function gustavo(){
