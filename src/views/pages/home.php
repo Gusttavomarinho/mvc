@@ -1,11 +1,7 @@
 <?php $render('header'); ?>
 
-Opa, <?php echo $nome;?><br/>
-<hr/>
+<a  href="<?=$base;?>/novo" class="waves-effect waves-light btn"><i class="material-icons left">add_box</i>Novo Usuario</a>
 
-<?php foreach($posts as $post): ?>
-<h3><?php echo $post['titulo']; ?></h3>
-<h3><?php echo $post['corpo']; ?></h3>
-<?php endforeach; ?>
+<?php $render('footer'); ?>
 
 
