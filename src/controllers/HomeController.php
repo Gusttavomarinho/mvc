@@ -3,19 +3,16 @@ namespace src\controllers;
 
 use \core\Controller;
 use \src\models\Test;
+use \src\models\Usuario;
 
 class HomeController extends Controller {
 
     public function index() {
-        $posts = [
-            ['titulo' => 'Titulo de teste 01', 'corpo' => 'Mensagem de teste 01'],
-            ['titulo' => 'Titulo de teste 02', 'corpo' => 'Mensagem de teste 02'],
-
-        ];
-        $nome = 'Gustavo';
-
-        $this->render('home', ['nome' => $nome, 'posts' => $posts]);
+        $data = Usuario::select()->get();
+        $this->render('home', ['data'=> $data]);
     }
+
+    /** DAQUI PRA BAIXO SAO TUDO FUNCTION DE TESTES */
 
     public function gustavo(){
         $nome = 'Gustavo Marinho';
