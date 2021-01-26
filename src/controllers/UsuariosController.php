@@ -24,7 +24,7 @@ class UsuariosController extends Controller {
             'nome' => $name,
             'email' => $email
             ])->execute();
-            //redirect para /
+            //redirect para . /
             $this->redirect('/');
             exit;
         }
