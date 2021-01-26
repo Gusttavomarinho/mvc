@@ -36,7 +36,7 @@ class UsuariosController extends Controller {
     }
 
     public function edit($args){
-      print_r($args);
+      //print_r($args);
         //$usuario = Usuario::select()->where('id',$args['id'])->one();
         $usuario = Usuario::select()->find($args['id']);
         //$data = ['usuario' => $usuario];
