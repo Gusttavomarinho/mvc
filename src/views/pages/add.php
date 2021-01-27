@@ -6,14 +6,12 @@
   <form method="POST" action="<?=$base;?>/novo" class="col s12">
     <div class="row">
       <div class="input-field col s4">
-        <input  id="name" name="name" type="text" class="validate">
-        <label for="name">Nome</label>
+        <input  id="name" name="name" type="text" class="validate" placeholder="Nome">
       </div>
     </div>
     <div class="row">
       <div class="input-field col s4">
-        <input id="email" name="email" type="email" class="validate">
-        <label for="email">Email</label>
+        <input id="email" name="email" type="email" class="validate" placeholder="Email">
       </div>
     </div>
     <div class="row">
