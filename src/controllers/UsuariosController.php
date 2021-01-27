@@ -68,10 +68,14 @@ class UsuariosController extends Controller {
       if($args){
         $data = Usuario::delete()->where('id',$args['id'])->execute();
         $this->redirect('/');
+      } 
 
-      }
+    }
+
+    public function show($args){
+      $data = Usuario::select()->find($args['id']);
+      $this->render('show',['usuario'=> $data,'tpagina'=>'Detalhes do Usuario']);
       
-
     }
 
 }
