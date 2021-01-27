@@ -1,4 +1,4 @@
-<?php $render('header'); ?>
+<?php $render('header',['tpagina'=>$tpagina]); ?>
 
 <h2>Editar Usuario</h2>
 

@@ -9,7 +9,7 @@ class HomeController extends Controller {
 
     public function index() {
         $data = Usuario::select()->get();
-        $this->render('home', ['data'=> $data]);
+        $this->render('home', ['data'=> $data,'tpagina'=>'Home']);
     }
 
     /** DAQUI PRA BAIXO SAO TUDO FUNCTION DE TESTES */

@@ -8,7 +8,7 @@ use \src\models\Usuario;
 class UsuariosController extends Controller {
 
     public function add(){
-      $this->render('add');
+      $this->render('add',['tpagina'=>'Adicionar Usuario']);
     }
 
     public function addAction(){
@@ -41,7 +41,7 @@ class UsuariosController extends Controller {
         $usuario = Usuario::select()->find($args['id']);
         //$data = ['usuario' => $usuario];
         //print_r($data);
-        $this->render('edit',['usuario'=> $usuario]);
+        $this->render('edit',['usuario'=> $usuario,'tpagina'=>'Editar Usuario']);
     }
 
     public function editAction($args){

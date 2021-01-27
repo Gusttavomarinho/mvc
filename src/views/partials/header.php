@@ -12,7 +12,7 @@
 <body>
 <header>
 <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><?= isset($tpagina) ? $tpagina : 'Titulo da pagina ###'; ?></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="<?=$base?>" class="brand-logo"><?= isset($tpagina) ? $tpagina : 'Titulo da pagina ###'; ?></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="<?=$base?>">Link ?</a></li>
       </ul>

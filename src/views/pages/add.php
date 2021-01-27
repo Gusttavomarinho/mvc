@@ -1,4 +1,4 @@
-<?php $render('header'); ?>
+<?php $render('header',['tpagina'=>$tpagina]); ?>
 
 <h2>Adicionar Novo Usuario</h2>
 
