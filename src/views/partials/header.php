@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <!-- import css -->
+  <link type="text/css" rel="stylesheet" href="<?=$base?>/assets/css/style.css" />
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
